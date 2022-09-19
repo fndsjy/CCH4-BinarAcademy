@@ -1,0 +1,479 @@
+/* Responsive Breakpoint Extra Small Devices*/
+@media screen and (max-width: 575px){
+    /* Header */
+    .offcanvas{
+        max-width: 50%;
+    }
+    .offcanvas-title{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 2px;
+    }
+    .offcanvas-body{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 auto;
+        margin-top: -1.5em;
+        width: 66%;
+    }
+    .offcanvas-body .nav-link.active{
+        margin-top: 8px;
+    }
+    .offcanvas-body .mid-a{
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-lg-custom img{
+        margin-left: -2%;
+    }
+    .nav-xl-custom{
+        display: none;
+    }
+    .img-xl-custom{
+        display: none;
+    }
+    .hero .row .text-hero h1{
+        width: 85.5%;
+    }
+    .hero .row .text-hero p{
+        width: 98%;
+        text-align: justify;
+    }
+    .hero .row .img-hero img{
+        margin-top: 1.5em;
+        width: 104%;
+    }
+
+    /* Section Our Services */
+    #our-services .row{
+        padding: 15px 0;
+    }
+    #our-services .row .col .people-services{
+        width: 100%;
+        padding: 0 18%;
+    }
+    #our-services .row .lists-services img {
+        min-width: 45px;
+        min-height: 20px;
+    }
+    #our-services .row .col h1 {
+        width: 101%;
+        font-size: 23px;
+    }
+    #our-services .row .col p#custom-text{
+        width: 96%;
+        text-align: justify;
+        font-size: 13px;
+    }
+    #our-services .row .col .row.lists-services p {
+        line-height: 7px;
+        margin: -15px 0 20px 3em;
+        font-size: 13px;
+    }
+
+    /* Section Why Us */
+    #why-us .row h1{
+        margin-top: -5px;
+        text-align: center;
+    }
+    #why-us .row #text-center-custom{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #why-us .card-height{
+        max-width: 800px;
+        margin-bottom: 20px;
+    }
+    #why-us .card .card-body img {
+        width: 45px;
+    }
+
+    /* Section Testimonial */
+    #testimonial .carousel-card {
+        margin-top: -1.5em;
+        max-width: 93%;
+        margin: 0 1em;
+    }
+    #testimonial .carousel-button {
+        margin-top: 35%;
+    }
+    #testimonial .carousel-card .carousel-desc p {
+        margin-top: 20px;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Section CTA Banner */
+    #cta-banner .row .card {
+        align-content: center;
+        margin-left: 3.5%;
+        min-height: 400px;
+        max-width: 92%;
+    }
+    #cta-banner .row .card-body .card-title {
+        margin-top: 9.5%;
+        padding: 0 5% 0 5%;
+    }
+    #cta-banner .row .card-body .card-text {
+        padding: 2% 5% 0 5%;
+    }
+
+    /* Section FAQ */
+    #faq .row .faq-text h1, #faq .row .faq-text p {
+        text-align: center;
+        align-content: center;
+    }
+    #faq .row .col-lg-8 .accordion {
+        max-width: 100%;
+        margin: 10px 0 5% 0;
+    }
+
+    /* Section Footer */
+    footer{
+        margin-top: -9%;
+    }
+    footer .row ul {
+        padding: 0 0 0 0;
+    }
+    footer .row li {
+        margin-bottom: 4%;
+    }
+    footer .row a {
+        font-weight: 600;
+    }
+    footer .row .logo-social-media img{
+        margin-right: -10px;
+    }
+    footer .row #social-media-custom{
+        margin-top: 0;
+    }
+    footer .row .logo-social-media{
+        margin: 10% 0 -3% -3%;
+    }
+}
+
+/* Responsive Breakpoint Small Devices*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    /* Header */
+    .offcanvas{
+        max-width: 40%;
+    }
+    .offcanvas-title{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .offcanvas-body{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 auto;
+        margin-top: -1.5em;
+        width: 65%;
+    }
+    .offcanvas-body .nav-link.active{
+        margin-top: 8px;
+    }
+    .offcanvas-body .mid-a{
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-lg-custom img{
+        margin-left: -5%;
+    }
+    .nav-xl-custom{
+        display: none;
+    }
+    .img-xl-custom{
+        display: none;
+    }
+    .hero .row .text-hero h1{
+        width: 90%;
+    }
+    .hero .row .text-hero p{
+        width: 90%;
+        text-align: justify;
+    }
+    .hero .row .img-hero img{
+        margin-top: 1.5em;
+        width: 102%;
+    }
+
+    /* Section Our Services */
+    #our-services .row{
+        padding: 15px 0;
+    }
+    #our-services .row .col .people-services{
+        width: 100%;
+        padding: 0 18%;
+    }
+    #our-services .row .col .desc-services{
+        width: 200%;
+    }
+    #our-services .row .lists-services img {
+        max-width: 48px;
+        max-height: 48px;
+    }
+     
+
+    /* Section Why Us */
+    #why-us .row h1{
+        margin-top: -40px;
+        text-align: center;
+    }
+    #why-us .row #text-center-custom{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #why-us .card-height{
+        max-width: 800px;
+        margin-bottom: 20px;
+    }
+    #why-us .card .card-body img {
+        width: 45px;
+    }
+
+    /* Section Testimonial */
+    #testimonial .carousel-card {
+        margin-top: -6%;
+        max-width: 97%;
+    }
+    #testimonial .carousel-button {
+        top: 320px;
+    }
+    #testimonial .carousel-card .carousel-desc p {
+        width: 103%;
+        justify-content: center;
+    }
+
+    /* Section CTA Banner */
+    #cta-banner .row .card {
+        margin-top: -4.5em;
+        align-content: center;
+        margin-left: 2%;
+        min-height: 400px;
+        max-width: 96%;
+    }
+    #cta-banner .row .card-body .card-title {
+        margin-top: 9.5%;
+        padding: 0 15% 0 15%;
+    }
+    #cta-banner .row .card-body .card-text {
+        padding: 2% 15% 0 15%;
+    }
+
+    /* Section FAQ */
+    #faq .row .faq-text h1, #faq .row .faq-text p {
+        text-align: center;
+        align-content: center;
+    }
+    #faq .row .col-lg-8 .accordion {
+        max-width: 100%;
+        margin: 10px 0 3% 0;
+    }
+
+    /* Section Footer */
+    footer{
+        margin-top: -9%;
+    }
+    footer .row ul {
+        padding: 0 0 0 0;
+    }
+    footer .row li {
+        margin-bottom: 4%;
+    }
+    footer .row a {
+        font-weight: 600;
+    }
+    footer .row .logo-social-media img{
+        margin-right: -10px;
+    }
+    footer .row #alamat-width-custom{
+        width: 50%;
+    }
+    footer .row #social-media-custom{
+        margin-top: 0;
+    }
+    footer .row .logo-social-media{
+        margin: 10% 0 -8% -2%;
+    }
+}
+
+/* Responsive Breakpoint Medium Devices*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    /* Header */
+    .offcanvas{
+        max-width: 40%;
+    }
+    .offcanvas-title{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .offcanvas-body{
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 auto;
+        margin-top: -1.5em;
+        width: 65%;
+    }
+    .offcanvas-body .nav-link.active{
+        margin-top: 8px;
+    }
+    .offcanvas-body .mid-a{
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-lg-custom img{
+        margin-left: -2%;
+    }
+    .nav-xl-custom{
+        display: none;
+    }
+    .img-xl-custom{
+        display: none;
+    }
+    .hero .row .text-hero h1{
+        width: 90%;
+    }
+    .hero .row .text-hero p{
+        width: 90%;
+        text-align: justify;
+    }
+    .hero .row .img-hero img{
+        margin-top: 1.5em;
+        width: 104%;
+    }
+
+    /* Section Our Services */
+    #our-services .row{
+        padding: 15px 0;
+    }
+    #our-services .row .col .people-services{
+        width: 100%;
+        padding: 0 18%;
+    }
+    #our-services .row .col .desc-services{
+        width: 200%;
+    }
+    #our-services .row .lists-services img {
+        max-width: 48px;
+        max-height: 48px;
+    }
+     
+
+    /* Section Why Us */
+    #why-us .row h1{
+        margin-top: -40px;
+        text-align: center;
+    }
+    #why-us .row #text-center-custom{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    #why-us .card-height{
+        max-width: 800px;
+        margin-bottom: 20px;
+    }
+    #why-us .card .card-body img {
+        width: 45px;
+    }
+
+    /* Section Testimonial */
+    #testimonial .carousel-card {
+        margin-top: 2%;
+        max-width: 90%;
+    }
+    #testimonial .carousel-button {
+        top: 260px;
+    }
+    #testimonial .carousel-card .carousel-desc p {
+        width: 103%;
+        justify-content: center;
+    }
+
+    /* Section CTA Banner */
+    #cta-banner .row .card {
+        margin-top: -4.5em;
+        align-content: center;
+        margin-left: 2%;
+        min-height: 400px;
+        max-width: 96%;
+    }
+    #cta-banner .row .card-body .card-title {
+        margin-top: 9.5%;
+        padding: 0 15% 0 15%;
+    }
+    #cta-banner .row .card-body .card-text {
+        padding: 2% 15% 0 15%;
+    }
+
+    /* Section FAQ */
+    #faq .row .faq-text h1, #faq .row .faq-text p {
+        text-align: center;
+        align-content: center;
+    }
+    #faq .row .col-lg-8 .accordion {
+        max-width: 100%;
+        margin: 10px 0 3% 0;
+    }
+
+    /* Section Footer */
+    footer{
+        margin-top: -9%;
+    }
+    footer .row ul {
+        padding: 0 0 0 0;
+    }
+    footer .row li {
+        margin-bottom: 4%;
+    }
+    footer .row a {
+        font-weight: 600;
+    }
+    footer .row .logo-social-media img{
+        margin-right: -10px;
+    }
+    footer .row #alamat-width-custom{
+        width: 50%;
+    }
+    footer .row #social-media-custom{
+        margin-top: 0;
+    }
+    footer .row .logo-social-media{
+        margin: 10% 0 -8% -2%;
+    }
+}
+
+/* Responsive Breakpoint Large Devices*/
+@media screen and (min-width: 992px) {
+    /* Header */
+    .nav-xl-custom{
+        display: flex;
+    }
+    .img-xl-custom{
+        display: flex;
+    }
+
+    /* Testimonial */
+    #testimonial .carousel-button {
+        top: 280px;
+    }
+}
