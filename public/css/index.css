@@ -91,6 +91,52 @@ header {
     width: 118%;
 }
 
+/* Section Form */
+
+#form .card{
+    margin-top: -4%;
+    margin-inline-start: 5%;
+    height: 107px;
+    width: 88%;
+    align-content: center;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 7px 7px 15px;
+}
+
+#form .card-body{
+    margin-top: -11%;
+    margin-inline-start: 3%;
+}
+
+#form .form-label{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3C3C3C;
+}
+
+#form #validation-default{
+    font-family: 'Helvetica';
+    height: 40px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    color: #3C3C3C;
+}
+
+#form .btn-success{
+    margin-top: 22%;
+}
+
+#form .btn-outline-success{
+    margin-top: 55%;
+    margin-left: -43px;
+}
+
 
 /* Section Our Services */
 
