@@ -95,13 +95,13 @@ header {
 
 #form .card{
     margin-top: -4%;
-    margin-inline-start: 5%;
+    margin: -4% auto 3% auto;
     height: 107px;
     width: 88%;
     align-content: center;
     border-radius: 10px;
     border-style: none;
-    box-shadow: 7px 7px 15px;
+    box-shadow: 0 0 10px;
 }
 
 #form .card-body{
@@ -118,7 +118,15 @@ header {
     color: #3C3C3C;
 }
 
-#form #validation-default{
+#form .driver-custom{
+    width: 200px;
+}
+
+#form #capacity{
+    width: 170px;
+}
+
+#form #driver, #form #date, #form #time, #form #capacity{
     font-family: 'Helvetica';
     height: 40px;
     font-style: normal;
@@ -129,14 +137,51 @@ header {
 }
 
 #form .btn-success{
-    margin-top: 22%;
+    height: 2.8em;
+    width: 100px;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 2.2em 0 0 -3em;
 }
 
 #form .btn-outline-success{
-    margin-top: 55%;
-    margin-left: -43px;
+    height: 2.8em;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-inline-start: 59em;
+    margin-top: -5em;
 }
 
+/* Section Result */
+
+#result-form{
+    width: 80%;
+    margin: 0 auto;
+    align-content: center;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#result-form .container-md{
+    padding: 0 0 0 0;
+}
+
+#result-form #cars-container .row{
+    padding: 0 0 15px 0;
+}
+
+#result-form .card{
+    box-shadow: 0 0 4px grey;
+    border-radius: 10px;
+    margin-inline-start: 12%;
+    margin-bottom: 20px;
+}
 
 /* Section Our Services */
 

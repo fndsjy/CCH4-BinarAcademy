@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Cars</title>
-    <link rel="stylesheet" href="/bootstrap-5.2.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/index.css">
-    <link rel="stylesheet" href="/public/css/responsive.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.example.css">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
             <nav class="navbar position-fixed">
                 <div class="d-lg-none">
                     <nav class="navbar fixed-top nav-lg-custom">
-                            <img src="/public/images/logo.png" class="img-responsive" alt="logo">
+                            <img src="images/logo.png" class="img-responsive" alt="logo">
                           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                           </button>
@@ -50,7 +52,7 @@
                           </div>
                       </nav>
                 </div>
-                <img src="/public/images/logo.png" class="img-responsive img-xl-custom" alt="logo">
+                <img src="images/logo.png" class="img-responsive img-xl-custom" alt="logo">
                 <ul class="nav nav-pills justify-content-end nav-xl-custom">
                     <li class="nav-item">
                         <a class="nav-link" href="#our-services">Our Services</a>
@@ -77,7 +79,7 @@
                     <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
                 </div>
                 <div class="col col-lg-6 col-md-12 col-sm-12 col-12 justify-content-md-end img-hero">
-                    <img src="/public/images/car.png" class="img-responsive img-hero" alt="car">
+                    <img src="images/car.png" class="img-responsive img-hero" alt="car">
                 </div>
             </div>
         </div>
@@ -86,43 +88,41 @@
         <div class="container-md">
             <div class="card">
                 <div class="card-body">
-                    <form class="row g-6">
-                        <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-md-2 driver-custom">
                             <label for="validationDefault01" class="form-label">Tipe Driver</label>
-                            <select class="form-select" id="validation-default" required>
-                                <option selected disabled value="">Pilih Tipe Driver</option>
-                                <option>Dengan Sopir</option>
-                                <option>Tanpa Sopir (Lepas Kunci)</option>
+                            <select class="form-select" id="driver" required>
+                                <option selected disabled value="" hidden>Pilih Tipe Driver</option>
+                                <option value="true">Dengan Sopir</option>
+                                <option value="false">Tanpa Sopir (Lepas Kunci)</option>
                             </select>
                         </div>
                         <div class="col-md-2">
                             <label for="validationDefault02" class="form-label">Tanggal</label>
-                            <input class="form-control textbox-n" id="validation-default" type="date" min="2022-09-20" max="2023-09-20" placeholder="Pilih Tanggal" required>
+                            <input class="form-control textbox-n" id="date" type="date" placeholder="Pilih Tanggal" required>
                         </div>
                         <div class="col-md-2">
                             <label for="validationDefault03" class="form-label">Waktu Jemput/Ambil</label>
-                            <select class="form-select" id="validation-default" required>
-                                <option selected disabled value="">Pilih Waktu</option>
-                                <option>08.00 WIB</option>
-                                <option>09.00 WIB</option>
-                                <option>10.00 WIB</option>
-                                <option>11.00 WIB</option>
-                                <option>12.00 WIB</option>
-                            </select>
+                            <input class="form-control textbox-n" id="time" type="time" placeholder="Pilih Waktu" required>
                         </div>
                         <div class="col-md-3">
                             <label for="validationDefault04" class="form-label">Jumlah Penumpang (optional)</label>
-                            <input class="form-control textbox-n" id="validation-default" type="text" placeholder="Jumlah Penumpang">
+                            <input class="form-control textbox-n" id="capacity" type="number" min="1" placeholder="Jumlah Penumpang">
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-success" type="submit">Cari Mobil</button>
+                            <input class="btn btn-success" type="submit" id="load-btn" value="Cari Mobil">
                         </div>
                         <div class="col-md-1">
-                            <button class="btn btn-outline-success" type="reset">Reset</button>
+                            <input class="btn btn-outline-success" type="reset" id="clear-btn" value="Reset">
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="result-form">
+        <div class="container-md">
+            <div class="row row-cols-auto justify-content-left" id="cars-container" style="margin-top: 0; padding-top: 0;"></div>
         </div>
     </section>
     <!--Footer-->
@@ -145,30 +145,30 @@
                 <div class="col col-lg-4 col-sm-12 col-12 ">
                     <p id="social-media-custom">Connect with us</p>
                     <div class="row logo-social-media">
-                        <img src="/public/images/icon_facebook.png ">
-                        <img src="/public/images/icon_instagram.png ">
-                        <img src="/public/images/icon_twitter.png ">
-                        <img src="/public/images/icon_mail.png ">
-                        <img src="/public/images/icon_twitch.png ">
+                        <img src="images/icon_facebook.png ">
+                        <img src="images/icon_instagram.png ">
+                        <img src="images/icon_twitter.png ">
+                        <img src="images/icon_mail.png ">
+                        <img src="images/icon_twitch.png ">
                     </div>
                 </div>
                 <div class="col col-lg-3 col-sm-12 col-12">
                     <p>Copyright Binar 2022</p>
-                    <img id="logo-custom" src="/public/images/logo.png">
+                    <img id="logo-custom" src="images/logo.png">
                 </div>
             </div>
         </div>
     </footer>
     <!--<script src="bootstrap-5.2.0-dist/js/bootstrap.min.js "></script>-->
 
-    <!--Bootsstrap JS bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!--Date picker-->
-    <script src="../scripts/date.picker.js"></script>
+    <!-- Example Javascript -->
+    <script type="text/javascript" src="scripts/binar.js"></script>
+    <script type="text/javascript" src="scripts/app.example.js"></script>
+    <script type="text/javascript" src="scripts/car.example.js"></script>
+    <script type="text/javascript" src="scripts/main.example.js"></script>
 </body>
 
 </html>
